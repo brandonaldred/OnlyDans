@@ -37,7 +37,7 @@ nav {
 }
 
 nav img {
-    width: 45px;
+    width: 35px;
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(171deg) brightness(95%) contrast(0%);
 }
 
