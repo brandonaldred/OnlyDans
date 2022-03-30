@@ -2,7 +2,7 @@ function buildPost(post, user) {
 
     //Simplify Post Data
     const userId = post.id;
-    const likesCount = post.likse;
+    const likesCount = post.likes;
     const imgURL = `img/posts/${post.image}.jpg`;
     const postText = post.post;
     const hashTags = post.hashtags;
@@ -77,21 +77,28 @@ function buildPost(post, user) {
     likes.setAttribute('class', 'counts');
     const likesIcon = document.createElement('IMG');
     likesIcon.setAttribute('src', 'img/heart-dark.svg');
-    likes.innerHTML = likesIcon;
+    likes.appendChild(likesIcon);
+    const likesSpan = document.createElement('SPAN');
+    likesSpan.innerText = likesCount;
+    likes.appendChild(likesSpan);
 
     const comments = document.createElement('P');
     comments.setAttribute('class', 'counts');
     const commentsIcon = document.createElement('IMG');
     commentsIcon.setAttribute('src', 'img/chat-dark.svg');
     comments.appendChild(commentsIcon);
-    comments.textContent = Math.floor(Math.random() * 1000);
+    const commentsSpan = document.createElement('SPAN');
+    commentsSpan.textContent = Math.floor(Math.random() * 1000);
+    comments.appendChild(commentsSpan);
 
     const tips = document.createElement('P');
     tips.setAttribute('class', 'counts');
     const tipsIcon = document.createElement('IMG');
     tipsIcon.setAttribute('src', 'img/tip.svg');
     tips.appendChild(tipsIcon);
-    tips.textContent = 'Send tip';
+    const tipsSpan = document.createElement('SPAN');
+    tipsSpan.textContent = 'Send tip';
+    tips.appendChild(tipsSpan);
 
     postInteractionsLeft.appendChild(likes);
     postInteractionsLeft.appendChild(comments);
