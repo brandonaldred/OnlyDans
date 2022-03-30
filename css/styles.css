@@ -187,6 +187,7 @@ nav img:hover {
         text-align: center;
         z-index: 99;
         width: 10%;
+        background: #ffffff;
     }
 
     #container {
