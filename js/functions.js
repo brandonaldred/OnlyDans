@@ -116,6 +116,7 @@ function buildPost(post, user) {
     feedItem.appendChild(feedItemHeader);
     feedItem.appendChild(feedPost);
     feedItem.appendChild(postInteractions);
+    feedItem.setAttribute('class', 'feed-item');
 
     document.querySelector('.feed-container').appendChild(feedItem);
 }
