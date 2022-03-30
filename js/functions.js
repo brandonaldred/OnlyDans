@@ -78,14 +78,14 @@ function buildPost(post, user) {
     const likesIcon = document.createElement('IMG');
     likesIcon.setAttribute('src', 'img/heart-dark.svg');
     likes.appendChild(likesIcon);
-    likes.textContent = likesCount;
+    likes.innerText = likesCount;
 
     const comments = document.createElement('P');
     comments.setAttribute('class', 'counts');
     const commentsIcon = document.createElement('IMG');
     commentsIcon.setAttribute('src', 'img/chat-dark.svg');
     comments.appendChild(commentsIcon);
-    comments.textContent = Math.random() * 1000;
+    comments.textContent = Math.floor(Math.random() * 1000);
 
     const tips = document.createElement('P');
     tips.setAttribute('class', 'counts');
