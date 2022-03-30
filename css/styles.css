@@ -74,7 +74,7 @@ nav img:hover {
 }
 
 .feed-item-name {
-    width: 70%;
+    width: 50%;
 }
 
 .feed-item-post {
@@ -101,6 +101,7 @@ nav img:hover {
     align-items: center;
     justify-content: space-between;
     width: 10%;
+    text-align: right;
 }
 
 @media only screen and (min-width: 600px) {
