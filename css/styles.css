@@ -30,13 +30,15 @@ nav {
 
 #content {
     position: relative;
-    margin-left: 3rem;
+    margin-left: 1.4rem;
+    border-right: 1px solid var(--light-gray);
 }
 
 #location {
     width: 100%;
     border-bottom: solid 1px var(--light-gray);
     padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 #location img {
@@ -57,8 +59,7 @@ nav {
 nav img {
     display: block;
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(171deg) brightness(95%) contrast(0%);
-    margin: 0 auto 2rem auto;
-    text-align: center;
+    margin-bottom: 2rem;
     width: 32px;
 }
 
@@ -66,10 +67,15 @@ nav img:hover {
     filter: invert(7%) sepia(10%) saturate(896%) hue-rotate(190deg) brightness(0%) contrast(82%);
 }
 
-.feed-container {
+nav {
     border-right: solid 1px var(--light-gray);
-    border-left: solid 1px var(--light-gray);
+    text-align: center;
+    z-index: 99;
+}
+
+.feed-container {
     height: 100vh;
+    position: relative;
 }
 
 .feed-item-header {
