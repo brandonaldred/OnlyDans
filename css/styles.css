@@ -60,6 +60,7 @@ nav img:hover {
 
 .profile-image {
     width: 10%;
+    max-width: 50px;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -74,7 +75,7 @@ nav img:hover {
 }
 
 .feed-item-name {
-    width: 60%;
+    width: 70%;
 }
 
 .post-date {
