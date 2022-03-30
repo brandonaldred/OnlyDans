@@ -24,7 +24,6 @@ nav {
     top: 0;
     left: 0;
     height: 100vh;
-
     display: inline;
     margin: 0;
     padding: 35px 15px;
@@ -56,6 +55,7 @@ nav {
     font-weight: bold;
     font-style: oblique;
     padding: 0 40px;
+    color: var(--gray);
 }
 
 nav img {
