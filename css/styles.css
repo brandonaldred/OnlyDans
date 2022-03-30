@@ -28,14 +28,14 @@ nav {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 0;
-    padding: 35px 15px;
+    padding: 35px 15px 10px 15px;
     border-right: solid 1px var(--light-gray);
     text-align: center;
     z-index: 99;
 }
 
 nav img {
-    width: 32px;
+    width: 45px;
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(171deg) brightness(95%) contrast(0%);
 }
 
@@ -166,6 +166,7 @@ nav img:hover {
     nav img {
         display: block;
         margin-bottom: 2rem;
+        width: 32px;
     }
 
     .mobile-hide {
@@ -200,6 +201,7 @@ nav img:hover {
     nav img {
         display: block;
         margin-bottom: 2rem;
+        width: 32px;
     }
 
     .mobile-hide {
