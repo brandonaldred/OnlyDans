@@ -91,6 +91,7 @@ nav img:hover {
     width: 50px;
     max-width: 4rem;
     border-radius: 50%;
+
 }
 
 .feed-item-header h3 {
@@ -141,6 +142,9 @@ nav img:hover {
     #container {
         width: 100%;
     }
+    .feed-item-name {
+        width: 80%;
+    }
     
 }
 
@@ -149,5 +153,8 @@ nav img:hover {
         width: 1000px;
         margin: auto;
         padding: 25px;
+    }
+    .feed-item-name {
+        width: 80%;
     }
 }
