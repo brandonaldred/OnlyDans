@@ -17,6 +17,7 @@
     background: white;
     position: relative;
     display:flex;
+    min-width:350px;
 }
 
 nav {
@@ -82,6 +83,7 @@ nav img:hover {
 .feed-container {
     height: 100vh;
     position: relative;
+    z-index: 0;
 
 }
 
@@ -149,26 +151,32 @@ nav img:hover {
     #container {
         width: 100%;
     }
+    #content {
+        margin: 0;
+        padding-top: 25px;
+        width: 90%;
+        position: absolute;
+        right: 0;
+    }
     .feed-item-name {
         width: 80%;
     }
     nav {
-        position: relative;
+        position: fixed;
         top: 0;
         left: 0;
         display: inline;
-        margin: 0;
+        margin: 0 auto 2rem auto;
         padding: 35px 15px;
         border-right: solid 1px var(--light-gray);
         text-align: center;
         z-index: 99;
         width: 10%;
-        box-shadow: 3px 0px 5px -3px rgba(0, 0, 0, 0.3);
     }
 
     nav img {
         display: block;
-        margin-bottom: 2rem;
+        margin: 0 auto 2rem auto;
         width: 32px;
     }
 
@@ -192,22 +200,13 @@ nav img:hover {
         width: 10%;
         box-shadow: 3px 0px 5px -3px rgba(0, 0, 0, 0.3);
     }
-
     #container {
         width: 1000px;
         margin: auto;
-        padding: 25px;
     }
     .feed-item-name {
         width: 80%;
     }
-
-    nav img {
-        display: block;
-        margin-bottom: 2rem;
-        width: 32px;
-    }
-
     .mobile-hide {
         display: block;
     }
