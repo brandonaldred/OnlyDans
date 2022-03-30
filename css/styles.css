@@ -31,7 +31,6 @@ nav {
 
 #content {
     position: relative;
-    width: 85%;
     border-right: 1px solid var(--light-gray);
     margin: 0;
 }
