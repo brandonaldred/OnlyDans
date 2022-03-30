@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --light-gray: #D0D5DA;
+    --gray: #8A96A3;
+    --dark-gray: #242529;
+    --blue: #03ACEE;
+}
+
+#container {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    height: 100vh;
+    width: 3rem;
+    display: inline;
+}
+
+#content {
+    position: relative;
+    margin-left: 3rem;
+}
+
+nav img {
+    display: block;
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(171deg) brightness(95%) contrast(0%);
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    width: 32px;
+}
+
+nav img:hover {
+    filter: invert(7%) sepia(10%) saturate(896%) hue-rotate(190deg) brightness(0%) contrast(82%);
+}
+
+.feed-container {
+    border-right: solid 1px var(--light-gray);
+    border-left: solid 1px var(--light-gray);
+}
+
+.feed-item-header {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.profile-image {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.feed-item-header h3 {
+    color: var(--dark-gray);
+}
+
+.feed-item-header h3 img {
+    width: 16px;
+    vertical-align: middle;
+}
+
+.feed-item-name {
+    width: 70%;
+}
+
+.feed-item-post {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+    border-bottom: solid 1px var(--light-gray);
+}
+
+.feed-item-post p {
+    padding: 10px;
+}
+
+.feed-item-post img {
+    width:100%;
+    height:100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.post-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    #container {
+        width: 1000px;
+        margin: auto;
+        padding: 25px;
+    }
+
+    .nav-home::after {
+        content: 'Home';
+        padding: 10px;
+
+    }
+
+
+    
+}
