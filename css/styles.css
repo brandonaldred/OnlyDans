@@ -24,7 +24,6 @@ nav {
     position: fixed;
     width: 100%;
     bottom: 0;
-    left: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -147,10 +146,35 @@ nav img:hover {
     display: block;
 }
 
+.post-interactions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.post-interactions-left {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.post-interactions-left img {
+    margin-right: 5px;
+    display: inline-block;
+}
+.counts {
+    margin-right: 15px;
+    display:flex;
+    align-items: center;
+}
+
+
 @media only screen and (min-width: 600px) {
     #container {
         max-width: 1000px;
         margin: auto;
+        position: relative;
     }
     #content {
         margin: 0;
@@ -163,13 +187,14 @@ nav img:hover {
         width: 80%;
     }
     nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         display: inline;
         margin: 0 auto 2rem auto;
         padding: 35px 15px;
         text-align: center;
         width: 10%;
+        max-width: 100px;
         height: 100vh;
         box-shadow: none;
     }
