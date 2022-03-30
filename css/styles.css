@@ -74,7 +74,15 @@ nav img:hover {
 }
 
 .feed-item-name {
-    width: 50%;
+    width: 60%;
+}
+
+.post-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+    text-align: right;
 }
 
 .feed-item-post {
@@ -96,14 +104,6 @@ nav img:hover {
     object-fit: cover;
 }
 
-.post-date {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 10%;
-    text-align: right;
-}
-
 @media only screen and (min-width: 600px) {
     #container {
         width: 100%;
@@ -117,13 +117,4 @@ nav img:hover {
         margin: auto;
         padding: 25px;
     }
-
-    .nav-home::after {
-        content: 'Home';
-        padding: 10px;
-
-    }
-
-
-    
 }
