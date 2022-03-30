@@ -117,6 +117,11 @@ nav img:hover {
     margin-left: 5px;
 }
 
+.feed-item-header p:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
 .feed-item-name {
     width: 70%;
 }
@@ -174,6 +179,11 @@ nav img:hover {
     margin-right: 15px;
     display:flex;
     align-items: center;
+}
+
+.hashtags {
+    color: var(--blue);
+    font-weight: bold;
 }
 
 

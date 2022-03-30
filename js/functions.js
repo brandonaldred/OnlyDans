@@ -32,7 +32,7 @@ function buildPost(post, user) {
     h3.appendChild(verified);
     feedItemName.appendChild(h3);
     const userHandle = document.createElement('P');
-    userHandle.textContent = user.handle;
+    userHandle.textContent = `@${user.handle}`;
     feedItemName.appendChild(userHandle);
 
     const postDate = document.createElement('P');
