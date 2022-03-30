@@ -11,6 +11,12 @@ const users = [{
     instagram: "https://www.instagram.com/trey_bikes/",
     about: "CINCINNATI"
 }, {
+    id: "3",
+    name: "Gavin",
+    handle: "tnl.gavinn",
+    instagram: "https://www.instagram.com/tnl.gavinn/",
+    about: "Sacramento, CA • 18 Years young"
+},{
     id: "4",
     name: "Jake Calhoun",
     handle: "jakecalhoun__",
