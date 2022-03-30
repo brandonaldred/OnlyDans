@@ -77,8 +77,7 @@ function buildPost(post, user) {
     likes.setAttribute('class', 'counts');
     const likesIcon = document.createElement('IMG');
     likesIcon.setAttribute('src', 'img/heart-dark.svg');
-    likes.appendChild(likesIcon);
-    likes.innerText = likesCount;
+    likes.innerHTML = likesIcon;
 
     const comments = document.createElement('P');
     comments.setAttribute('class', 'counts');
