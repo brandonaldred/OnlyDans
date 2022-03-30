@@ -149,7 +149,8 @@ nav img:hover {
 
 @media only screen and (min-width: 600px) {
     #container {
-        width: 100%;
+        max-width: 1000px;
+        margin: auto;
     }
     #content {
         margin: 0;
@@ -162,16 +163,15 @@ nav img:hover {
         width: 80%;
     }
     nav {
-        position: fixed;
+        position: absolute;
         top: 0;
-        left: 0;
         display: inline;
         margin: 0 auto 2rem auto;
         padding: 35px 15px;
-        border-right: solid 1px var(--light-gray);
         text-align: center;
-        z-index: 99;
         width: 10%;
+        height: 100vh;
+        box-shadow: none;
     }
 
     nav img {
@@ -187,27 +187,5 @@ nav img:hover {
 }
 
 @media only screen and (min-width: 1000px) {
-    nav {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: inline;
-        margin: 0;
-        padding: 35px 15px;
-        border-right: solid 1px var(--light-gray);
-        text-align: center;
-        z-index: 99;
-        width: 10%;
-        box-shadow: 3px 0px 5px -3px rgba(0, 0, 0, 0.3);
-    }
-    #container {
-        width: 1000px;
-        margin: auto;
-    }
-    .feed-item-name {
-        width: 80%;
-    }
-    .mobile-hide {
-        display: block;
-    }
+
 }
