@@ -299,6 +299,12 @@ nav img:hover {
         width: 45%;
     }
 
+    .list-double {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .list-item-profile-image img {
         width: 100px;
         height: 100px;
