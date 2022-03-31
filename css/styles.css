@@ -273,7 +273,7 @@ nav img:hover {
     height: 200px;
     display: block;
     border-radius: 50%;
-    outline: 5px solid #ffffff;
+    border: 5px solid #ffffff;
     margin: -125px auto 35px auto;
     z-index: 10;
     overflow: hidden;
