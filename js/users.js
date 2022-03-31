@@ -28,6 +28,12 @@ const users = [{
     handle: "bradybakerbmx",
     instagram: "https://www.instagram.com/bradybakerbmx/",
     about: "19 - BMX Athlete - California📍"
+},{
+    id: "6",
+    name: "Zack Miller",
+    handle: "zack_rides_bmx",
+    instagram: "https://www.instagram.com/zack_rides_bmx/",
+    about: "Parks, Streets, Woods 🚲"
 }, {
     id: "7",
     name: "Colin Akerman",
@@ -100,4 +106,10 @@ const users = [{
     handle: "joey15bagz",
     instagram: "https://www.instagram.com/joey15bagz/",
     about: ""
+}, {
+    id: "20",
+    name: "Jocie Camarra",
+    handle: "joc313",
+    instagram: "https://www.instagram.com/joc313/",
+    about: "Bmx, Fitness, Burritos, Raising Hell & Stoke"
 }]

@@ -120,3 +120,48 @@ function buildPost(post, user) {
 
     document.querySelector('.feed-container').appendChild(feedItem);
 }
+
+
+function buildListItem(user) {
+
+    let userProfileImg = `img/profiles/${user.id}-profile.jpg`;
+    let userCoverImg = `img/cover/${user.id}-cover.jpg`;
+    let userName = user.name;
+    let userHandle = user.handle;
+
+    const listItem = document.createElement('DIV');
+    listItem.setAttribute('class', 'list-item');
+    listItem.setAttribute('data-id', user.id);
+
+    const listItemProfileContainer = document.createElement('DIV');
+    listItemProfileContainer.setAttribute('class','list-item-profile-image');
+    const listItemProfileImg = document.createElement('IMG');
+    listItemProfileImg.setAttribute('src', userProfileImg);
+    listItemProfileContainer.appendChild(listItemProfileImg);
+
+    const listItemName = document.createElement('DIV');
+    listItemName.setAttribute('class', 'feed-item-name');
+    const h3 = document.createElement('H3');
+    h3.textContent = userName;
+    const verified = document.createElement('IMG');
+    verified.setAttribute('src', 'img/verified.svg');
+    h3.appendChild(verified);
+    listItemName.appendChild(h3);
+    const userHandleP = document.createElement('P');
+    userHandleP.textContent = `@${userHandle}`;
+    listItemName.appendChild(userHandleP);
+
+    const coverPhoto = document.createElement('IMG');
+    coverPhoto.setAttribute('src', userCoverImg);
+    coverPhoto.setAttribute('class', 'cover-background');
+
+    listItem.appendChild(listItemProfileContainer);
+    listItem.appendChild(listItemName);
+    listItem.appendChild(coverPhoto);
+
+    document.querySelector('.feed-container').appendChild(listItem);
+    listItem.addEventListener('click', (e) => {
+        let id = listItem.dataset.id;
+        window.location.href =`/user.html?${id}`;
+    });
+}

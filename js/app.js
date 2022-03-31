@@ -5,13 +5,4 @@ function buildFeed(id) {
     }
 }
 
-
-
-const navHome = document.querySelector('.nav-home');
-navHome.addEventListener('click', () => {
-    document.querySelector('.feed-container').innerHTML = '';
-    buildFeed();
-});
-
-
 buildFeed();
