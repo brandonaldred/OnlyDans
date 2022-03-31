@@ -7,7 +7,16 @@ function extractId(iCalContent) {
 const userId = extractId(window.location.href);
 console.log(userId);
 
-const navHome = document.querySelector('.nav-home');
-navHome.addEventListener('click', () => {
-    window.location.href = '/index.html';
-});
+let user;
+for(let i = 0; i < users.length; i++) {
+    if(users[i].id == userId) {
+        user = users[i];
+    }
+}
+
+
+for(let i = 0; i < posts.length; i++) {
+    if(userId == posts[i].id) {
+        buildPost(posts[i],user);
+    }
+}

@@ -67,7 +67,7 @@ const posts = [{
 }, {
     id: "5",
     likes: "629",
-    image: "277369651_2772682083034793_222395187935273553",
+    image: "277369651_2772682083034793_222395187935273553_n",
     post: "Pulling back on the 5 ft",
     hashtags: "#bmx #reels #danscomp #monsterarmy"
 }, {

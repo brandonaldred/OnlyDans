@@ -252,6 +252,49 @@ nav img:hover {
     object-position: center;
 }
 
+.user-cover {
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user-cover-photo {
+    display: inline-block;
+    width: 100%;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.user-profile-photo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 50%;
+    outline: 5px solid #ffffff;
+    margin: -125px auto 35px auto;
+    z-index: 10;
+}
+
+.user-profile-info {
+    text-align: center;
+    padding: 0 15px 35px 15px;
+    line-height: 1.5em;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.user-profile-info a {
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--blue);
+    padding: 15px 75px;
+    color: #ffffff;
+    border-radius: 20px;
+}
 
 @media only screen and (min-width: 600px) {
     #container {
