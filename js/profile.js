@@ -4,7 +4,7 @@ function extractId(iCalContent) {
     return arr[0]; 
   }
 
-const userId = extractId(window.location.href);
+const userId = /(?<=\?).*/g.exec(window.location.href)[0];
 console.log(userId);
 
 let user;
