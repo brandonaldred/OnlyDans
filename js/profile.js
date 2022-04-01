@@ -1,5 +1,5 @@
 
-const userId = /(?<=\?).*/g.exec(window.location.href)[0];
+const userId = /(?<=\?=).*/g.exec(window.location.href)[0];
 
 let user;
 for(let i = 0; i < users.length; i++) {
