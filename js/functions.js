@@ -118,6 +118,18 @@ function buildPost(post, user) {
     feedItem.appendChild(postInteractions);
     feedItem.setAttribute('class', 'feed-item');
 
+    userHandle.addEventListener('click', (e) => {
+        window.location.href = `/user.html?${userId}`;
+    });
+
+    h3.addEventListener('click', (e) => {
+        window.location.href = `/user.html?${userId}`;
+    });
+
+    profileImage.addEventListener('click', (e) => {
+        window.location.href = `/user.html?${userId}`;
+    });
+
     document.querySelector('.feed-container').appendChild(feedItem);
 }
 
@@ -164,4 +176,41 @@ function buildListItem(user) {
         let id = listItem.dataset.id;
         window.location.href =`/user.html?${id}`;
     });
+}
+
+function buildProfile(user) {
+    const userCover = document.createElement('DIV');
+    userCover.setAttribute('class', 'user-cover');
+    const coverPhoto = document.createElement('IMG');
+    coverPhoto.setAttribute('src',`img/cover/${user.id}-cover.jpg`);
+    coverPhoto.setAttribute('class','user-cover-photo');
+    userCover.appendChild(coverPhoto);
+
+    const userProfile = document.createElement('DIV');
+    userProfile.setAttribute('class', 'user-profile-photo');
+    const profilePhoto = document.createElement('IMG');
+    profilePhoto.setAttribute('src',`img/profiles/${user.id}-profile.jpg`);
+    userProfile.appendChild(profilePhoto);
+
+    const profileInfo = document.createElement('DIV');
+    profileInfo.setAttribute('class','user-profile-info');
+    const h3 = document.createElement('H3');
+    h3.innerText = user.name;
+    const pHandle = document.createElement('P');
+    pHandle.innerText = `@${user.handle}`;
+    const pInfo = document.createElement('P');
+    pInfo.innerText = user.about;
+    const subscribe = document.createElement('A');
+    subscribe.setAttribute('href',`https://www.instagram.com/${user.handle}`);
+    subscribe.setAttribute('target','_blank');
+    subscribe.innerText = 'Subscribe Only $4.99/mo.';
+    profileInfo.appendChild(h3);
+    profileInfo.appendChild(pHandle);
+    profileInfo.appendChild(pInfo);
+    profileInfo.appendChild(subscribe);
+
+    const feedContainer = document.querySelector('.feed-container');
+    feedContainer.appendChild(userCover);
+    feedContainer.appendChild(userProfile);
+    feedContainer.appendChild(profileInfo);
 }

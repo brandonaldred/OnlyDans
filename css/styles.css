@@ -260,7 +260,7 @@ nav img:hover {
 }
 
 .user-cover-photo {
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 
