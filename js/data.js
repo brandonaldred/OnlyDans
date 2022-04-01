@@ -16,18 +16,6 @@ const posts = [{
     image: "274744853_339999641372789_7709671950105041507_n",
     post: "Diving in on your burrito like a kamikaze seagull while you\re not lookin",
     hashtags: "#BMX #Burrito #Braap #Beware"
-},{
-    id: "17",
-    likes: "8862",
-    image: "255855861_431420908431622_2598632994936934761_n",
-    post: "Cali Prom night 2021",
-    hashtags: "#secalicrew #sebikes #cali #colombia"
-}, {
-    id: "16",
-    likes: "552",
-    image: "275939137_433207138605263_6352977860675578872_n",
-    post: "#tabletopthursday I guess…",
-    hashtags: "#profileracing #digbmx #rebirthisland #bmx"
 }, {
     id: "14",
     likes: "632",
@@ -119,18 +107,6 @@ const posts = [{
     post: "📸: @alexterry504",
     hashtags: ""
 }, {
-    id: "17",
-    likes: "420",
-    image: "256029869_572985850440167_4787763458928518934_n",
-    post: "Use DICKCHEESE for 20% off!",
-    hashtags: "#crushedbmx #crushedbmxgloves #bigdoublesnotroubles #sebikes #secalicrew #cali #colombia"
-}, {
-    id: "16",
-    likes: "4459",
-    image: "275939309_2243056052516990_1132325434106568730_n",
-    post: "n case anyone was wondering who we were talking with tonight in our dIG live…",
-    hashtags: "#profileracing #digbmx #bmx"
-}, {
     id: "15",
     likes: "843",
     image: "133429135_448471049505898_4000497351340406199_n",
@@ -154,12 +130,6 @@ const posts = [{
     image: "274137836_283730063861858_4606145053398408952_n",
     post: "Love when a plan works out 🧘🏻‍♂️ how’s this for a #5tapchallenge @brant_moore 🤔😅🌪",
     hashtags: "#5tapchallenge"
-}, {
-    id: "17",
-    likes: "3365",
-    image: "257326734_437092057932985_8494096335874467813_n",
-    post: "Very honored to be apart of the #secalicrew Thank you @sebikes",
-    hashtags: "#sebikes #sebikeslife #sebigflyer #potterracing #crushedbmxgloves #cali #colombia"
 }, {
     id: "15",
     likes: "1152",
@@ -226,18 +196,6 @@ const posts = [{
     image: "257671010_1014424825794575_1636438258135208918_n",
     post: "Just trying air quarters and eat @nofodoco donuts.",
     hashtags: "#Bikes #SlowProgressIsProgress #Ride #BigBitesLittleBikes #BMX"
-}, {
-    id: "17",
-    likes: "2255",
-    image: "274966638_109020408300415_7185040475862826762_n",
-    post: "Crank’n the @sebikes X @vans #pkripper sideways 🔴🟡",
-    hashtags: "#sebikes #vans #pkripper #20inch #looptail #seracing #sefactorysquad #vansbmx #vansshoes #usabmx #yucaipabmx"
-}, {
-    id: "16",
-    likes: "658",
-    image: "277071861_936924700160094_161678367480043556_n",
-    post: "@subrosabrand Madrid is all laughs so far despite the 🌧",
-    hashtags: "#subrosabrand #digbmx #bmx"
 }, {
     id: "15",
     likes: "412",
