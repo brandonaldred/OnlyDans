@@ -1,5 +1,6 @@
 
 const userId = /(?<=\?=).*/g.exec(window.location.href)[0];
+alert(userId);
 
 let user;
 for(let i = 0; i < users.length; i++) {
