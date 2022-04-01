@@ -1,5 +1,5 @@
 function buildFeed(id) {
-    for(let i = posts.length; i >= 0; i--) {
+    for(let i = 0; i < posts.length; i++) {
         let post = posts[i];
         buildPost(post, users[post.id - 1])
     }

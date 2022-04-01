@@ -1,4 +1,4 @@
-[{
+const posts = [{
     id: "18",
     likes: "6024",
     image: "248925338_1097274577680553_2222970939072245988_n",
@@ -11,6 +11,12 @@
     post: "Day 🥉 @colonybmxbrand in AZ #thankyou",
     hashtags: "#thankyou"
 }, {
+    id: "20",
+    likes: "693",
+    image: "274744853_339999641372789_7709671950105041507_n",
+    post: "Diving in on your burrito like a kamikaze seagull while you\re not lookin",
+    hashtags: "#BMX #Burrito #Braap #Beware"
+},{
     id: "17",
     likes: "8862",
     image: "255855861_431420908431622_2598632994936934761_n",
@@ -161,6 +167,12 @@
     post: "Photo from today",
     hashtags: "#bmx #bmxlife #bmxpark #bmxfamily #vocalbmx #monsterenergy #monsterarmy #plus2clothing #khebikes #trick #instagram #photo #thespacebrace"
 }, {
+    id: "20",
+    likes: "1569",
+    image: "274655072_2723872847920059_8385470611575708641_n",
+    post: "This thing. Sometimes it loves me, sometimes it doesn’t (wanna admit it loves me).  I’ll always be grateful tho, it’s allowed me to see some reallllly cool places & squeeze some really cool humans. 😈",
+    hashtags: "#BMX #Burrito #Braap #Beware"
+},{
     id: "9",
     likes: "110",
     image: "159746927_191087672449573_2026642794075456729_n",

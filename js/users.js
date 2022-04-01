@@ -95,6 +95,12 @@ const users = [{
     instagram: "https://www.instagram.com/DIGBMX/",
     about: "Fueling BMX Imagination Since 1993."
 }, {
+    id: "17",
+    name: "Dick Cheeseburger",
+    handle: "dickcheeseburger1",
+    instagram: "https://www.instagram.com/dickcheeseburger1/?hl=en",
+    about: "Big doubles, no troubles!"
+},{
     id: "18",
     name: "Matt Ray",
     handle: "matt1ray",
