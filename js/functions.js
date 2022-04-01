@@ -119,15 +119,15 @@ function buildPost(post, user) {
     feedItem.setAttribute('class', 'feed-item');
 
     userHandle.addEventListener('click', (e) => {
-        window.location.href = `/user.html?${userId}`;
+        window.location.href = `/user.html?=${userId}`;
     });
 
     h3.addEventListener('click', (e) => {
-        window.location.href = `/user.html?${userId}`;
+        window.location.href = `/user.html?=${userId}`;
     });
 
     profileImage.addEventListener('click', (e) => {
-        window.location.href = `/user.html?${userId}`;
+        window.location.href = `/user.html?=${userId}`;
     });
 
     document.querySelector('.feed-container').appendChild(feedItem);
